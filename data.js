@@ -52,7 +52,14 @@ var APP_DATA = {
           "target": "6-cucina"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -2.60297400763433,
+          "pitch": 0.70587489959065763,
+          "title": "Benvenuti",
+          "text": "<div>Questo è un'esempio di tour guidato.</div><div>Stai visitando la casa di Nettuno. Puoi girare per le stanze e incluso uscire dalla finestra e vedere il borgo mediovale dall'alto.</div><div> Cerca i circoli bianchi girando il cellulare o cliccando e trascinando con il mouse sullo schermo, poi cliccaci per cambiare punto di vista. Puoi anche usare il menu a tendina a sinistra, per visualizzarlo nel cellulare devi cliccare sulle due linee bianche in alto a sinistra.</div>"
+        }
+      ]
     },
     {
       "id": "1-salotto",
