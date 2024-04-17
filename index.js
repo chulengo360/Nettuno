@@ -194,10 +194,11 @@
     }
     else  {
         hideSceneList();
+	enableGiro(scene); // Questo prima stava fuori sotto a update SceneList(scene);
     }
     updateSceneName(scene);
     updateSceneList(scene);
-    enableGiro(scene);
+    //enableGiro(scene);
   }
 
   function updateSceneName(scene) {
