@@ -83,7 +83,9 @@
         var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
     }
     else  {
-        var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 150*Math.PI/180, 120*Math.PI/180);
+        var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize*2, 80*Math.PI/180, 120*Math.PI/180);
+//var limiter = Marzipano.RectilinearView.limit.resolution(resolution),
+//Marzipano.RectilinearView.limit.vfov(vfov.min, vfov.max),
     }
     var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
