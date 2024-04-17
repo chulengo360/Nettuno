@@ -78,7 +78,13 @@
       { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
-    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    // Limiti di zoom diversi se mobile o desktop.
+    if (!document.body.classList.contains('mobile')) {
+        var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    }
+    else  {
+        var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 60*Math.PI/180, 120*Math.PI/180);
+    }
     var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
     var scene = viewer.createScene({
