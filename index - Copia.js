@@ -192,9 +192,7 @@
 
   function switchScene(scene) {
     stopAutorotate();
-    //scene.view.setParameters(scene.data.initialViewParameters);
-    //prova a cambiare il yaw according to l'attuale
-    scene.view.setParameters(viewer.view() && viewer.view().parameters() || scene.data.initialViewParameters);
+    scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
      // Start with the Autorate on desktop.
     if (!document.body.classList.contains('mobile')) {
